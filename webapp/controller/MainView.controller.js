@@ -23,6 +23,13 @@ sap.ui.define([
                 var oCCInput = this.getView().byId("idInputCC");
                 var oSelect = oEvent.getSource(); 
                 var sSelectedText =   oSelect.getSelectedItem().getText();
+
+                // set to default value
+                    oMobileLabel.setVisible(false);
+                    oMobileInput.setVisible(false);
+                     oCCLabel.setVisible(false);
+                    oCCInput.setVisible(false);
+
                 if (sSelectedKey === "GCASH"){
                     // show the mobile field
                     oMobileLabel.setVisible(true);
